@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+	
+    
+</head>
+<body>
+
+<h2>STRING PROPERTIES</h2>
+<p>length property return the length of a string</p>
+
+<p id="m1"></p>
+
+<h2>STRING METHODS</h2>
+<h3>.slice()</h3>
+
+<p id="m2"></p>
+
+<h3>.substr()</h3>
+
+<p id="m3"></p>
+<p id="m4"></p>
+
+<h3>.replace()</h3>
+
+<p id="m5"></p>
+
+<h3>.toUpperCase()</h3>
+
+<p id="m6"></p>
+
+<h3>.toLowerCase()</h3>
+
+<p id="m7"></p>
+
+<h3>.concat()</h3>
+
+<p id="m8"></p>
+
+<h3>.trim()</h3>
+
+<p id="m9"></p>
+
+<h3>.padStart()</h3>
+
+<p id="m10"></p>
+
+<h3>.padEnd()</h3>
+
+<p id="m11"></p>
+
+
+<script>
+
+
+let text1 = "ABCDEFGHIJKLMN";
+document.getElementById("m1").innerText = text1.length;
+let str = "mani, ramm, ranjith";
+document.getElementById("m2").innerHTML = str.slice(6,10);
+let str1 = "mani, ramm, ranjith";
+document.getElementById("m3").innerHTML = str1.substr(6,6); 
+let str2 = "mani, ramm, ranjith";
+document.getElementById("m4").innerHTML = str2.substr(-7);
+let str3 = "mani, ramm, ranjith";
+document.getElementById("m5").innerHTML = str3.replace("mani","ranjith");
+let str4 = "mani, ramm, ranjith";
+document.getElementById("m6").innerHTML = str4.toUpperCase();
+let str5 = "MANI, RAMM, RANJITH";
+document.getElementById("m7").innerHTML = str5.toLowerCase();
+let str6 = "Ramm, Ranjith";
+let str7 ="Mani";
+document.getElementById("m8").innerHTML = str6.concat(" ",str7);
+let str8 = "   mani   ";
+document.getElementById("m9").innerHTML = str8.trim(); 
+let str9 = "mani";
+document.getElementById("m10").innerHTML = str9.padStart(7,"k");
+let str10 = "mani";
+document.getElementById("m11").innerHTML = str10.padEnd(7,"k"); 
+
+
+</script>
+
+</body>
+</html>
